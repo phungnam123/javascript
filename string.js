@@ -33,5 +33,25 @@ console.log(myjob.indexOf('f'))
 console.log(myjob.lastIndexOf('f'))
 
 console.log(myjob.slice(0, 9))
-console.log(myjob.replace('fullstack', 'frontend'))
+console.log(myjob.replace('fullstack', 'frontend')) // frontedn developer f
 console.log(myjob.charAt(0))
+const newStr = 'backend'
+//              012345
+//substr: Lay ra 1 phan cua chuoi
+//substr(index,length)
+console.log(newStr.substr(0, 4)) // back
+
+//substring: Lay ra ky tu cua 1 chuoi
+//substring(index,index)
+console.log(newStr.substring(1, 4))
+
+//// Loại bỏ khoảng trống 2 bên, đưa tất cả về IN HOA, thay chữ `Developer D` thành chữ `Developer and Designer`, sau đó repeat 2 lần;
+const myStr3 = '      Frontend Developer D        '
+
+console.log(
+  myStr3
+    .trim()
+    .replace('Developer D', 'Developer and Designer')
+    .toUpperCase()
+    .repeat(2)
+)
